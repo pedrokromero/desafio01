@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+}
+body {
+    background-color: #b9afb4;
+}
+body * {
+    font-family: 'Roboto', sans-serif; 
+}
+
+#app {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas:
+    'A B'
+    'A C';
+    gap: 40px;
+
+    place-content: center;
+    height: 100vh;
+}
+
+
+/*Player Grande*/
+#playerGrande {
+    grid-area: A;
+    padding: 50px 38px;
+}
+
+#playerGrande .wrapper {
+    width: 190px;
+}
+
+#playerGrande img{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+		border-radius: 6px;
+}
+
+#playerGrande .info{
+margin-top: 28px;
+}
+
+
+/*Player Medio*/
+#playerMedio {
+    grid-area: B;
+		height: fit-content;
+}
+
+
+/*Player Pequeno*/
+#playerPequeno {
+    grid-area: C;
+		height: fit-content;
+}
+
+.player {
+    background-color: #463c5f;
+    padding: 20px;
+		border-radius: 20px;
+}
+
+.player img{
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.info-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+
+.info {
+color: #ffffff;
+}
+
+.info h1 {
+    font-size: 20px;
+		margin-bottom: 9px;
+}
+
+.info h2 {
+	font-size: 18px;
+	margin-bottom: 9px;
+}
+
+.info p {
+    opacity: 0.50;
+		font-size: 16px;
+}
+
+.info p2 {
+	opacity: 0.50;
+	font-size: 14px;
+}
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 28px;
+}
+
+.horizontal .controls {
+	padding-inline: 40px;
+}
+
+.track{
+	margin-top: 28px;
+	position: relative;
+}
+
+.track::before{
+	content:'';
+	height: 6px;
+	width: 100%;
+	display: block;
+	background: #D9D9D9;
+	opacity: 0.3;
+	border-radius: 10px;
+	position: absolute;
+}
+
+.track::after{
+	content:'';
+	height: 6px;
+	width: 80%;
+	display: block;
+	background: #D9D9D9;
+	border-radius: 10px;
+}
+
+.time{
+	font: size 14px;
+	color: #b9afb4;
+	opacity: 0.7;
+
+	display: flex;
+	justify-content: space-between;
+	margin-top: 9px;
+}
