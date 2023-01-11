@@ -62,7 +62,7 @@ margin-top: 28px;
 
 .player {
     background-color: #463c5f;
-    padding: 20px;
+    padding: 30px;
 		border-radius: 20px;
 }
 
@@ -76,7 +76,7 @@ margin-top: 28px;
 .info-wrapper {
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: 20px;
 }
 
 
@@ -111,7 +111,10 @@ color: #ffffff;
 }
 
 .horizontal .controls {
-	padding-inline: 40px;
+	margin-top: 30px;
+	padding-inline: 20px;
+	margin-bottom: 15px;
+	
 }
 
 .track{
